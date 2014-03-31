@@ -5,7 +5,6 @@ object Helper {
 	val Jetty = config("jetty")
 	def complexProject(name: String): Project =
 	  Project(name, file(name)).settings(
-		ivyUseMemoryCache := true,
 	  	 scalaVersion := "2.10.3",
 	  	 resolvers += "typesafe-releases" at "http://repo.typesafe.com/typesafe/releases",
          libraryDependencies ++= 
